@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.phonegap.app9"
+	version="1.0.0">
+
+	<name>app9 Reproductor de Audio</name>
+
+	<description>
+		Utiliza Plugins de audio para reproducir archivo mp3
+	</description>
+
+	<author href="https://build.phonegap.com" email="pedritotapita@hotmail.com">
+		Pedro Enrique Tapia Duran
+	</author>
+
+	<!--Personaliza la aplicacion y plataforma-->
+	<preference name="orientation"		value="portrait"/>
+	<preference name="target-device"		value="universal"/>
+	<preference name="fullscreen"		value="true"/>
+	<preference name="android-installLocation"	value="auto"/>
+	<preference name="permissions" value="INTERNET"/>
+
+	<!--Plugins-->
+	<plugin name="cordova-plugin-device" spec="~1.1.4"/>
+	<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+	<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+
+	<!--Plugin Audio-->
+
+	<plugin name="cordova-plugin-media" spec="https://github.com/apache/cordova-plugin-media.git"/>
+
+	<!--Colocar icono app-->
+
+	<icon src="res/android/mdpi.png"/>
+
+</widget>
+

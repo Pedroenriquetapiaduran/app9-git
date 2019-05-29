@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+
+	<title>Reproductor de Audio</title>
+
+	<!--grupo JavaScript-->
+	<script src="phonegap.js"></script>
+
+	<!--grupo CSS-->
+	<link rel="stylesheet" href="css/style.css" media="screen">
+
+</head>
+<body>
+	<div data-role="header" align="center">
+		<h1>Reproductor mp3</h1>
+	</div>
+	<div id="container">
+
+		<div id="audio-image">
+			<img class="cover"/>
+		</div>
+		<div id="audio-player">
+			<div id="audio-info">
+				<span class="artist"></span> - <span class="title"></span>
+			</div>
+			<input id="volume" type="range" min="0" max="10" value="5"/>
+			<br>
+			<div id="buttons">
+			<span>
+				<button id="play"></button>
+				<button id="pause"></button>
+				<button id="stop"></button>
+			</span>
+		</div>
+		<div class="clearfix"></div>
+		<div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		</div>
+		<div class="clearfix"></div>
+		<ul id="playlist" class="hidden">
+		<li song="LinkiPark.mp3" cover="linkin park1.jpg" artist="Linkin Park">In the end</li>
+		<li song="Austin Mahone - Mmm Yeah ft. Pitbull.mp3" cover="austin mahone1.jpg" artist="Austin Mahone">Mmm Yeah ft. Pitbull</li>
+		<li	song="Avicii - Wake Me Up.mp3" cover="aviicii1.jpg" artist="Aviicii">Wake Me Up</li>
+		<li song="Charlie Puth - We dont talk anymore feat selena gomez.mp3" cover="charlie puth1.jpg" artist="Charlie Puth">We dont talk anymore feat selena gomez</li>
+		<li song="Coldplay - The Scientist.mp3" cover="coldplay1.jpg" artist="Coldplay">The Scientist</li>
+		<li song="Justin Bieber  BloodPop - Friends.mp3" cover="justin bieber1.jpg" artist="Justin Bieber">Friends</li>
+		<li song="Marshmello - Alone.mp3" cover="marshmello1.jpg" artist="Marshmello">Alone.mp3</li>		
+		<li song="Martin Garrix & Bebe Rexha - In The Name Of Love.mp3" cover="martin garrix1.jpg" artist="Martin Garrix">In The Name Of Love</li>
+		<li song="Wolves.mp3" cover="selena gomez1.jpg" artist="Selena Gomez">Wolves</li>
+		<li song="SKRILLEX - Scary Monsters And Nice Sprites.mp3" cover="skrillex1.jpg" artist="Skrillex">Scary Monsters And Nice Sprites</li>
+		<li song="Taylor Swift - Look What You Made Me Do.mp3" cover="taylor swift1.jpg" artist="Taylor Swift">Look What You Made Me Do</li>
+		<li song="David Guetta feat. Ne-Yo & Akon - Play Hard.mp3" cover="david guetta1.jpg" artist="David Guetta">Play Hard</li>
+	</ul>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+</div>
+
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+	<h4>Pedro Enrique Tapia Durán</h4>
+	<img src="res/android/mdpi.png" width="56" height="46">
+</div>
+</body>
+</html>
